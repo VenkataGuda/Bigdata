@@ -1,0 +1,22 @@
+AB_COOPERATING_SYSTEMS : abinitio3229
+
+AB_DISPLAY_NAME @ abinitio3155 : V3-1-5-5
+AB_DESCRIPTION @ abinitio3155 : Use V3-1-5-5 installation as run Co>Operating System
+AB_HOME @ abinitio3155 : /optware/abinitio-V3-1-5-5
+
+AB_DISPLAY_NAME @ abinitio3229 : V3-2-2-9
+AB_DESCRIPTION @ abinitio3229 : Use V3-2-2-9 installation as run Co>Operating System
+AB_HOME @ abinitio3229 : /optware/abinitio-V3-2-2-9
+
+# Default Co>Operating System for client services
+AB_CLIENT_SERVICES_HOME : /optware/abinitio-V3-2-2-9
+
+#EME Data Store Settings
+AB_EME_DATASTORES : ste-prod
+AB_DISPLAY_NAME @ ste-prod : ste-prod EME DATASTORE V3-2-2-9
+AB_AIR_ROOT @ ste-prod : //aisteemep/abinitio/comp_eme/eme/ste-prod
+AB_DESCRIPTION @ ste-prod : ste-prod EME DATASTORE V3-2-2-9
+
+AB_KEYSERVER_GROUPS : CitiF400_01
+AB_KEYSERVER_URLS @ CitiF400_01 : abks://corpai100d.nam.nsroot.net:6150 abks://ctofaig00d.nam.nsroot.net:6150
+AB_KEYSERVER_ADMIN_EMAIL @ CitiF400_01 : dl.GT.AppSvcs.AI.Support@imcnam.ssmb.com
