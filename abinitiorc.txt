@@ -1,0 +1,39 @@
+# system-wide config var settings
+AB_NODES  @ unixhost_all : aisteemep  ctocomaiswetlp  ctocomaiswx10p ctocomaiswx11p
+
+#### Below AB_HOME is required to connect to EME and should set on all servers ###
+
+AB_HOST_INTERFACE : ctocomaiswetlp
+AB_HOME @ aisteemep : /opt/abinitio3229
+
+#### Below parameters are only applicable for this machine. Do NOT copy to other machines ###
+
+### AB_TMPDIR is local rootvg file system to improve the performance, please do not change ###
+AB_TMPDIR : /abinitio/tmp
+AB_DB_TMPDIR : /abinitio/tmp
+AB_PROCDIR : /abinitio/tmp
+
+
+AB_HOST_ALIAS_FILE : /opt/abinitio_config/host-alias
+AB_APPLICATION_HUB : /opt/abinitio3229
+
+AB_SSH_NEEDS_PASSWORD : false
+AB_CONNECTION @ unixhost_all : ssh
+
+AB_WORKDIR_CREATION_MODE : 0755
+AB_FLOWFILE_CREATION_MODE : 0664
+
+AB_RANDOM_SEED: random
+
+AB_AIW_PERSIST_COOKIE : false
+
+AB_OPS_MONITOR : true
+AB_OPS_CONSOLE_URL : https://vm-7210-e2c6.nam.nsroot.net:21121/cc
+
+AB_CHECK_GETCWD_AFTER_CHDIR : false
+
+######## All Servers needed below parameter where WLM is running ########
+AB_WORKLOAD_RESPONSE_TIMEOUT : 100000000
+AB_WORKLOAD_CONNECT_TIMEOUT : 300
+################################
+AB_TOLERATE_SCP_OUTPUT: true

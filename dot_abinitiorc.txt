@@ -1,0 +1,46 @@
+AB_WORK_DIR: /abinitio/spaiprg/abworkdir
+AB_DATA_DIR: /abinitio/spaiprg/data/abdatadir
+AB_RUN_DIR : /abinitio/spaiprg/run
+
+# SIQ DB Setup
+ IQ_DB_VERSION : 15.0
+ IQ_DB_HOME : /optware/sybase/sdk150r
+ IQ_DB_NAME : MSDW_PROD
+ IQ_DB_CLIENT_DIR : /optware/sybase/sdk150r/OCS-15_0
+ IQ_DB_SERVER : MSDW_IQPROD
+#IQ_DB_NODE : localhost
+#IQ_DB_NODE : corpaietl10p corpaietl11p
+IQ_DB_NODE : ctocomaiswx10p.nam.nsroot.net
+ IQ_DB_INTERFACES : /optware/sybase/sdk150r/interfaces
+ IQ_DB_USER : cdwlsr
+ IQ_DB_ENCRYPT_PSWD : 78Sbn4I3Txdeyyn2d2irsU
+ IQ_DB_DELIM : "|"
+
+#DB2 DB Setup
+ DB2_DB_VERSION : 9.1
+ DB2_DB_HOME : db2v9in1
+ DB2_DB_NAME : DB2PRD03
+#DB2_DB_NODE : localhost
+#DB2_DB_NODE : corpaietl10p corpaietl11p
+DB2_DB_NODE : ctocomaiswx10p.nam.nsroot.net
+ DB2_DB_USER : nlc01p
+ DB2_DB_ENCRYPTED_PASSWD : tZei5bmX1Qyte3fyUKHo1U
+ DB2_DB_DELIM : "|"
+ DB2_SCHEMA : NLCDB2P
+
+#ORACLE DB Setup
+#COMMON_DB_ORA_SPIDER_VERSION : 11.1.0.7
+#COMMON_DB_ORA_SPIDER_HOME : /optware/oraClient/11.1.0.7
+COMMON_DB_ORA_SPIDER_VERSION : 11.2.0.4
+COMMON_DB_ORA_SPIDER_HOME : /optware/oraClient/11.2.0.4
+ COMMON_DB_ORA_SPIDER_NAME : @SPORPRG
+#COMMON_DB_ORA_SPIDER_NODES : localhost
+#COMMON_DB_ORA_SPIDER_NODES : corpaietl10p corpaietl11p
+COMMON_DB_ORA_SPIDER_NODES : ctocomaiswx10p.nam.nsroot.net
+ COMMON_DB_ORA_SPIDER_USER : spider
+ COMMON_DB_ORA_SPIDER_ENCRYPTED_PASSWD : YhoJTWonSBetIvGqPKKkwH
+
+COMMON_DB_ORA_LOPR_USER : lopr
+COMMON_DB_ORA_LOPR_ENCRYPTED_PASSWD : bRsl8_9R5iHMbamLpDEJGU
+AB_EXPORT : TNS_ADMIN
+AB_EXPECTED_RECORD_MBYTES : 25000000
